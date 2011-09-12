@@ -15,12 +15,12 @@ class Factorization
   
   def initialize(args)
     @factors = []
-    self.trial_divison(args)
+    self.trial_division(args)
   end
   
   attr_reader :factors
   
-  def trial_divison(num)
+  def trial_division(num)
     primes = []
     if num == 1
       primes.push(1)
@@ -56,6 +56,14 @@ class Factorization
   
 end
 
+number = 600851475143
 
-factor = Factorization.new(600851475143)
+factor = Factorization.new(number/2)
 puts factor.factors
+
+#  AJ suggests
+#- find all primes n/2
+#- start from greatest prime divide into n, first integer solves the problem.
+#- with the solution being the prime
+#- actualy, don't have to goto n/2 since n is odd
+#- start by dividing n by the integers greater than 0... testing each integer for primeness... the first prime is the solution
