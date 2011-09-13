@@ -7,4 +7,4 @@ Problem 1. Finished but unable to find my original solution.
 
 Problem 2. Finished. 9.9.11
 
-Problem 3. In progress. 9.11.11
+Problem 3. Finished. 9.13.11
